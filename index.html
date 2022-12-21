@@ -26,7 +26,7 @@
         <nav>
           <ul class="site-nav">
             <li class="item">
-              <a class="link" href="./index.html">Студія</a>
+              <a class="link current" href="./index.html">Студія</a>
             </li>
             <li class="item">
               <a class="link" href="./portfolio.html">Портфоліо</a>
@@ -449,12 +449,52 @@
             </li>
           </ul>
         </div>
+        <div class="replay">
+          <form>
+            <h3 class="title-footer">Підпишіться на розсилку</h3>
+          
+              <input class="input-email" type="email" name="email" id="email" placeholder="E-mail">
+              <button type="button" class="button-third">Підписатися</button>
+           
+            
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-modal" data-modal-close type="button">
         </button>
+        <div>
+          
+          <form class="form">
+            <h2>Залиште свої дані, ми вам передзвонимо</h2>
+            <div class="input">
+              <label for="name" class="label">Ім'я</label>
+              <input class="input-form" type="text" name="user-name" id="name">
+            </div>
+            <div class="input">
+              <label for="tel" class="label">Телефон</label>
+              <input class="input-form" type="tel" name="tel" id="tel">
+            </div>
+            <div class="input">
+              <label for="email" class="label">Пошта</label>
+              <input class="input-form" type="email" name="email" id="email">
+            </div>
+            <div class="input">
+              <label for="comment" class="label">Коментар</label>
+              <textarea class="textarea" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+            </div>
+            <div class="input">
+              <input type="checkbox" name="checkbox" value="checkbox" id="checkbox">
+              <label for="checkbox">Погоджуюся з розсилкою та приймаю Умови договору</label>
+            </div>
+
+            <button class="button-two" type="button">Відправити</button>
+
+          </form>
+        </div>
+        
       </div>
     </div>
 
