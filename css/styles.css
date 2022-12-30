@@ -833,14 +833,19 @@ ul {
 
 .form {
   width: 448px;
-  margin: 0 40px 40px 40px;
+  margin: 0 40px 40px 30px;
 }
 
 .input {
   display: flex;
   flex-direction: column;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
   width: 100%;
+}
+.input-checkbox {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .input-form {
@@ -853,12 +858,21 @@ ul {
 .textarea {
   height: 120px;
   width: 100%;
+  padding: 12px 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
 }
 
 .button-two {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--color-white);
   font-family: inherit;
   font-size: 16px;
@@ -869,25 +883,13 @@ ul {
   cursor: pointer;
   letter-spacing: 0.03em;
   display: inline-block;
-  padding: 10px 32px;
+  padding: 10px 52px;
   text-align: center;
   border-radius: 4px;
   min-width: 152px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.label {
-  margin-bottom: 5px;
-  color: var(--color-brand);
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-}
-
-/* .checkbox {
-    display: inline-block
-  }*/
 
 .replay {
   display: flex;
@@ -933,4 +935,34 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12px;
+}
+
+.label {
+  color: var(--color-brand);
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.contract {
+  color: var(--color-inverted);
+  text-decoration: underline;
+}
+
+.agreement {
+  color: rgba(117, 117, 117, 1);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.input-form:hover,
+.input-form:focus,
+.textarea:hover,
+.textarea:focus {
+  border: 1px solid var(--color-inverted);
 }
