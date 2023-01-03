@@ -995,7 +995,8 @@ ul {
 .textarea:hover,
 .textarea:focus,
 .input-email:hover {
-  border: 1px solid var(--color-inverted);
+  border: transparent;
+  outline: 1px solid var(--color-inverted);
 }
 
 .icon-form {
