@@ -833,7 +833,7 @@ ul {
 
 .form {
   width: 448px;
-  margin: 0 40px 40px 30px;
+  margin: 0 40px 30px 40px;
 }
 
 .input {
@@ -844,8 +844,9 @@ ul {
 }
 .input-checkbox {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .input-form {
@@ -868,11 +869,12 @@ ul {
   letter-spacing: 0.01em;
 }
 
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
 .button-two {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
   color: var(--color-white);
   font-family: inherit;
   font-size: 16px;
@@ -953,11 +955,11 @@ ul {
 }
 
 .agreement {
+  margin-left: 7px;
   color: rgba(117, 117, 117, 1);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 
 .input-form:hover,
