@@ -910,6 +910,8 @@ ul {
 .button-third {
   position: relative;
   margin-left: 12px;
+  margin-right: 10px;
+  width: 200px;
   color: var(--color-white);
   font-family: inherit;
   font-size: 16px;
@@ -919,8 +921,8 @@ ul {
   border: 0;
   cursor: pointer;
   letter-spacing: 0.03em;
-  display: inline-block;
-  padding: 10px 32px;
+
+  padding: 10px 62px 10px 28px;
   text-align: center;
   border-radius: 4px;
   min-width: 152px;
@@ -931,7 +933,12 @@ ul {
 .icon-send {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  transform: translateY(50%);
+  fill: var(--color-white);
+
+  margin-right: 28px;
+  margin-left: 10px;
 }
 
 .input-email {
