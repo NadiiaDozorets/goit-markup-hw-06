@@ -1030,8 +1030,11 @@ ul {
   border-radius: 4px;
 }
 
-.checkbox :checked + .checkbox-icon {
-  background-image: url('../images/vector.svg');
+.checkbox:checked + .checkbox-icon {
+  background-image: url('..//images/vector.jpg');
+  background-size: content;
+  background-repeat: no-repeat;
+  background-origin: border-box;
   background-color: var(--color-inverted);
   border-color: var(--color-inverted);
 }
