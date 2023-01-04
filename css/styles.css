@@ -859,12 +859,14 @@ ul {
 .input-form {
   height: 40px;
   width: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: transparent;
+  outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   cursor: pointer;
   padding-left: 42px;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    /*, border 250ms cubic-bezier(0.4, 0, 0.2, 1)*/;
 }
 
 .textarea {
@@ -879,6 +881,7 @@ ul {
   line-height: 1.6;
   letter-spacing: 0.01em;
   cursor: pointer;
+  resize: none;
 }
 
 .submit {
@@ -907,7 +910,7 @@ ul {
 
 .replay {
   display: flex;
-  margin-left: 70px;
+  margin-left: 93px;
 }
 
 .button-third {
@@ -948,12 +951,14 @@ ul {
   padding: 15px 16px;
   height: 50px;
   width: 358px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: transparent;
+  outline: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--color-accent);
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  color: var(--color-white);
   cursor: pointer;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -999,7 +1004,6 @@ ul {
 .textarea:hover,
 .textarea:focus,
 .input-email:hover {
-  border: transparent;
   outline: 1px solid var(--color-inverted);
 }
 
