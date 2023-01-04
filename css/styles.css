@@ -642,7 +642,8 @@ ul {
 }
 
 .primary-button:hover,
-.button-two:hover {
+.button-two:hover,
+.button-third:hover {
   background-color: #0789f3;
 }
 
@@ -829,9 +830,10 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   /*outline: solid 1px red;*/
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close :hover {
+.button-modal:hover > .icon-close {
   fill: var(--color-inverted);
 }
 
@@ -862,6 +864,7 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   padding-left: 42px;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea {
@@ -952,6 +955,7 @@ ul {
   line-height: 1.25;
   letter-spacing: 0.03em;
   cursor: pointer;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-title {
